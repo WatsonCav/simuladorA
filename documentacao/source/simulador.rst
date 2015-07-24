@@ -1,0 +1,31 @@
+.. SmartPower documentation master file, created by
+   sphinx-quickstart on Thu Jul 16 09:57:33 2015.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Arquivo simulador.py
+====================
+
+Arquivo que contem a janela principal do simulador.
+
+.. toctree::
+   :maxdepth: 2
+
+   JanelaPrincipal
+   ControlMainWindow
+
+JanelaPrincipal
+---------------
+
+Herda de: object
+
+Parametros:
+
+* :ref:`inicializar_componentes`
+* :ref:`itemInserted`
+* :ref:`save`
+* :ref:`open`
+* :ref:`setSelect`
+* :ref:`buttonGroupClicked`
+* :ref:`retranslateUi`
+

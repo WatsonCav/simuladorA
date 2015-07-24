@@ -15,8 +15,6 @@ from avisoReligador import AvisoReligador
 
 lista_no_conectivo = []
 
-print 'este e um teste de commit'
-
 class DashedLine(QtGui.QGraphicsLineItem):
 
     def __init__(self):
