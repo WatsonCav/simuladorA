@@ -3,32 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-graphics.py
-===========
+Arquivo graphics.py
+===================
 
 Arquivo que contem as classes graficas do simulador.
 
+Classes
+-------
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    
-   DashedLine
-   Edge
-   Text
-   Node
-   SceneWidget
-   ViewWidget
-   add_remove_command
-
-Classes:
---------
-
-* :ref:`DashedLine`
-* :ref:`Edge`
-* :ref:`Text`
-* :ref:`Node`
-* :ref:`SceneWidget`
-* :ref:`ViewWidget`
-* :ref:`add_remove_command`
+   DashedLine<DashedLine>
+   Edge<Edge>
+   Text<Text>
+   Node<Node>
+   SceneWidget<SceneWidget>
+   ViewWidget<ViewWidget>
+   add_remove_command<add_remove_command>
 
 
 

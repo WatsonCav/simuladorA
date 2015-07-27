@@ -6,13 +6,7 @@
 Bem-vindo a documentaçao do SmartPower!
 ==========================================
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-   
-   simulador
-   graphics
+Descrição...
 
 Indices:
 --------
@@ -24,6 +18,8 @@ Indices:
 Arquivos:
 ---------
 
-* :ref:`simulador`
-* :ref:`graphics`
-
+.. toctree::
+   :maxdepth: 1
+   
+   simulador.py<simulador>
+   graphics.py<graphics>

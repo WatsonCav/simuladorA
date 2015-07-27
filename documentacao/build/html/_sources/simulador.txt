@@ -6,32 +6,14 @@
 Arquivo simulador.py
 ====================
 
-Arquivo que contem a janela principal do simulador.
-
-.. toctree::
-   :maxdepth: 2
-
-   JanelaPrincipal
-   ControlMainWindow
+Arquivo principal (executável) do simulador.
 
 Classes
 -------
 
-* :ref:`JanelaPrincipal`
-* :ref:`ControlMainWindow`
+.. toctree::
+   :maxdepth: 1
 
-JanelaPrincipal
----------------
-
-Herda de: object
-
-Parametros:
-
-* :ref:`inicializar_componentes`
-* :ref:`itemInserted`
-* :ref:`save`
-* :ref:`open`
-* :ref:`setSelect`
-* :ref:`buttonGroupClicked`
-* :ref:`retranslateUi`
+   JanelaPrincipal<JanelaPrincipal>
+   ControlMainWindow<ControlMainWindow>
 
