@@ -3,10 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Classe ControlMainWindow
-========================
+ControlMainWindow
+==================
 
-Descrição.............
+Classe que cria a janela principal do programa.
+
+.. toctree::
+   :maxdepth: 1
 
 Métodos
 --------

@@ -27,7 +27,7 @@
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="SmartPower 0.1 documentação" href="index.html" />
     <link rel="up" title="Arquivo simulador.py" href="simulador.html" />
-    <link rel="next" title="Classe ControlMainWindow" href="ControlMainWindow.html" />
+    <link rel="next" title="ControlMainWindow" href="ControlMainWindow.html" />
     <link rel="prev" title="Arquivo simulador.py" href="simulador.html" /> 
   </head>
   <body role="document">
@@ -38,7 +38,7 @@
           <a href="genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="ControlMainWindow.html" title="Classe ControlMainWindow"
+          <a href="ControlMainWindow.html" title="ControlMainWindow"
              accesskey="N">próximo</a> |</li>
         <li class="right" >
           <a href="simulador.html" title="Arquivo simulador.py"
@@ -55,11 +55,11 @@
             
   <div class="section" id="janelaprincipal">
 <h1>JanelaPrincipal<a class="headerlink" href="#janelaprincipal" title="Link permanente para este título">¶</a></h1>
-<p>Descrição.............</p>
+<p>Classe que implementa a interface gráfica do simulador.</p>
 <div class="section" id="metodos">
 <h2>Métodos<a class="headerlink" href="#metodos" title="Link permanente para este título">¶</a></h2>
 <ul class="simple">
-<li><a href="#id1"><span class="problematic" id="id2">`inicializar_componentes`_</span></a></li>
+<li>inicializar_componentes</li>
 <li>itemInserted</li>
 <li>save</li>
 <li>open</li>
@@ -73,7 +73,35 @@
 </div>
 <div class="section" id="inicializar-componentes-main-window">
 <h3>inicializar_componentes(main_window)<a class="headerlink" href="#inicializar-componentes-main-window" title="Link permanente para este título">¶</a></h3>
-<p><strong>Parâmetro: main_window</strong> - JanelaPrincipal</p>
+<p><strong>Parâmetro: main_window</strong> - object.JanelaPrincipal</p>
+<p><code class="docutils literal"><span class="pre">Método</span> <span class="pre">que</span> <span class="pre">implementa</span> <span class="pre">os</span> <span class="pre">componentes</span> <span class="pre">da</span> <span class="pre">interface</span> <span class="pre">gráfica.</span></code></p>
+</div>
+<div class="section" id="iteminserted-item-type">
+<h3>itemInserted(item_type)<a class="headerlink" href="#iteminserted-item-type" title="Link permanente para este título">¶</a></h3>
+<p><strong>Parâmetro: item_type</strong> -</p>
+<p><code class="docutils literal"><span class="pre">Callback</span> <span class="pre">chamada</span> <span class="pre">no</span> <span class="pre">momento</span> <span class="pre">em</span> <span class="pre">que</span> <span class="pre">um</span> <span class="pre">item</span> <span class="pre">é</span> <span class="pre">inserido</span> <span class="pre">no</span> <span class="pre">diagrama</span> <span class="pre">gráfico.</span></code></p>
+</div>
+<div class="section" id="save">
+<h3>save()<a class="headerlink" href="#save" title="Link permanente para este título">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">Método</span> <span class="pre">que</span> <span class="pre">salva</span> <span class="pre">os</span> <span class="pre">elementos</span> <span class="pre">gráficos</span> <span class="pre">chamando</span> <span class="pre">a</span> <span class="pre">função</span> <span class="pre">que</span> <span class="pre">os</span> <span class="pre">codifica</span> <span class="pre">em</span> <span class="pre">um</span> <span class="pre">arquivo</span> <span class="pre">XML.</span></code></p>
+</div>
+<div class="section" id="open">
+<h3>open()<a class="headerlink" href="#open" title="Link permanente para este título">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">Método</span> <span class="pre">que</span> <span class="pre">abre</span> <span class="pre">o</span> <span class="pre">arquivo</span> <span class="pre">XML</span> <span class="pre">salvo</span> <span class="pre">anteriormente</span> <span class="pre">e</span> <span class="pre">chama</span> <span class="pre">função</span> <span class="pre">que</span> <span class="pre">redesenha</span> <span class="pre">os</span> <span class="pre">elementos</span> <span class="pre">graficos.</span></code></p>
+</div>
+<div class="section" id="setselect">
+<h3>setSelect()<a class="headerlink" href="#setselect" title="Link permanente para este título">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">Callback</span> <span class="pre">chamada</span> <span class="pre">no</span> <span class="pre">momento</span> <span class="pre">em</span> <span class="pre">que</span> <span class="pre">se</span> <span class="pre">faz</span> <span class="pre">necessário</span> <span class="pre">alterar</span> <span class="pre">o</span> <span class="pre">modo</span> <span class="pre">de</span> <span class="pre">seleção</span> <span class="pre">para</span> <span class="pre">movimentação</span> <span class="pre">de</span> <span class="pre">itens</span> <span class="pre">no</span> <span class="pre">diagrama</span> <span class="pre">gráfico</span> <span class="pre">ou</span> <span class="pre">vice-versa.</span></code></p>
+</div>
+<div class="section" id="buttongroupclicked-id">
+<h3>buttonGroupClicked(id)<a class="headerlink" href="#buttongroupclicked-id" title="Link permanente para este título">¶</a></h3>
+<p><strong>Parâmetro: id</strong> -</p>
+<p><code class="docutils literal"><span class="pre">Callback</span> <span class="pre">chamada</span> <span class="pre">no</span> <span class="pre">momento</span> <span class="pre">em</span> <span class="pre">que</span> <span class="pre">um</span> <span class="pre">botão</span> <span class="pre">de</span> <span class="pre">inserção</span> <span class="pre">de</span> <span class="pre">itens</span> <span class="pre">é</span> <span class="pre">pressionado.</span></code></p>
+</div>
+<div class="section" id="retranslateui-main-window">
+<h3>retranslateUi(main_window)<a class="headerlink" href="#retranslateui-main-window" title="Link permanente para este título">¶</a></h3>
+<p><strong>Parâmetro: main_window</strong> - object.JanelaPrincipal</p>
+<p><code class="docutils literal"><span class="pre">Callback</span> <span class="pre">chamada</span> <span class="pre">no</span> <span class="pre">momento</span> <span class="pre">em</span> <span class="pre">que</span> <span class="pre">um</span> <span class="pre">botão</span> <span class="pre">de</span> <span class="pre">inserção</span> <span class="pre">de</span> <span class="pre">itens</span> <span class="pre">é</span> <span class="pre">pressionado.</span></code></p>
 </div>
 </div>
 </div>
@@ -90,6 +118,12 @@
 <li><a class="reference internal" href="#metodos">Métodos</a><ul>
 <li><a class="reference internal" href="#class-janelaprincipal-parent-object"><em>class</em> JanelaPrincipal(<em>[parent=object]</em>)</a></li>
 <li><a class="reference internal" href="#inicializar-componentes-main-window">inicializar_componentes(main_window)</a></li>
+<li><a class="reference internal" href="#iteminserted-item-type">itemInserted(item_type)</a></li>
+<li><a class="reference internal" href="#save">save()</a></li>
+<li><a class="reference internal" href="#open">open()</a></li>
+<li><a class="reference internal" href="#setselect">setSelect()</a></li>
+<li><a class="reference internal" href="#buttongroupclicked-id">buttonGroupClicked(id)</a></li>
+<li><a class="reference internal" href="#retranslateui-main-window">retranslateUi(main_window)</a></li>
 </ul>
 </li>
 </ul>
@@ -101,7 +135,7 @@
                         title="capítulo anterior">Arquivo simulador.py</a></p>
   <h4>Próximo tópico</h4>
   <p class="topless"><a href="ControlMainWindow.html"
-                        title="próximo capítulo">Classe ControlMainWindow</a></p>
+                        title="próximo capítulo">ControlMainWindow</a></p>
   <div role="note" aria-label="source link">
     <h3>Esta Página</h3>
     <ul class="this-page-menu">
@@ -133,7 +167,7 @@
           <a href="genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="ControlMainWindow.html" title="Classe ControlMainWindow"
+          <a href="ControlMainWindow.html" title="ControlMainWindow"
              >próximo</a> |</li>
         <li class="right" >
           <a href="simulador.html" title="Arquivo simulador.py"

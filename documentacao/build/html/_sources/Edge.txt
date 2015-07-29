@@ -3,10 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Classe Edge
-=============
+*class* Edge(*[parent = QGraphicsLineItem]*)
+===============================================
+**Parâmetro: parent** - QtGui.QGraphicsLineItem
 
-Descrição.............
+Classe que implementa o objeto Edge que liga dois objetos Node um ao outro.
 
 Métodos
 -------
@@ -19,9 +20,11 @@ Métodos
 * mousePressEvent
 * contestMenuEvent
 
-*class* Edge(*[parent=QGraphicsLineItem]*)
+__init__(w1, w2, edge_menu)
 ++++++++++++++++++++++++++++++++++++++++++++++
-**Parâmetro: parent** - QtGui.QGraphicsLineItem
+**Parâmetro: w1, w2** - QtGui.QGraphicsRectItem.Node
+
+**Parâmetro: edge_menu** - QtGui.QGraphicsLineItem
 
 get_fraction(pos)
 ++++++++++++++++++
@@ -38,8 +41,8 @@ set_color(color)
 boundingRect()
 ++++++++++++++++
 
-paint(painter,option,widget)
-+++++++++++++++++++++++++++++++++++
+paint(painter, option, widget)
+++++++++++++++++++++++++++++++
 ``Breve descrição da função``
 
 **Parâmetro: painter** -

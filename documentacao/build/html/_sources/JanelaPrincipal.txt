@@ -6,12 +6,12 @@
 JanelaPrincipal
 ===============
 
-Descrição.............
+Classe que implementa a interface gráfica do simulador.
 
 Métodos
 -------
 
-* `inicializar_componentes`_
+* inicializar_componentes
 * itemInserted
 * save
 * open
@@ -25,4 +25,39 @@ Métodos
 
 inicializar_componentes(main_window)
 +++++++++++++++++++++++++++++++++++++++
-**Parâmetro: main_window** - JanelaPrincipal
+**Parâmetro: main_window** - object.JanelaPrincipal
+
+``Método que implementa os componentes da interface gráfica.``
+
+itemInserted(item_type)
++++++++++++++++++++++++++++++++++++++++
+**Parâmetro: item_type** - 
+
+``Callback chamada no momento em que um item é inserido no diagrama gráfico.``
+
+save()
++++++++
+
+``Método que salva os elementos gráficos chamando a função que os codifica em um arquivo XML.``
+
+open()
++++++++
+
+``Método que abre o arquivo XML salvo anteriormente e chama função que redesenha os elementos graficos.``
+
+setSelect()
+++++++++++++
+
+``Callback chamada no momento em que se faz necessário alterar o modo de seleção para movimentação de itens no diagrama gráfico ou vice-versa.``
+
+buttonGroupClicked(id)
++++++++++++++++++++++++
+**Parâmetro: id** - 
+
+``Callback chamada no momento em que um botão de inserção de itens é pressionado.``
+
+retranslateUi(main_window)
++++++++++++++++++++++++++++
+**Parâmetro: main_window** - object.JanelaPrincipal
+
+``Callback chamada no momento em que um botão de inserção de itens é pressionado.``

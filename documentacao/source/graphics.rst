@@ -6,7 +6,7 @@
 Arquivo graphics.py
 ===================
 
-Arquivo que contem as classes graficas do simulador.
+Arquivo que contém as classes graficas do simulador.
 
 Classes
 -------
@@ -21,6 +21,3 @@ Classes
    SceneWidget<SceneWidget>
    ViewWidget<ViewWidget>
    add_remove_command<add_remove_command>
-
-
-

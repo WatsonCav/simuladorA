@@ -8,15 +8,15 @@ Bem-vindo a documentaçao do SmartPower!
 
 Descrição...
 
-Indices:
---------
+Indices
+-------
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 
-Arquivos:
----------
+Arquivos (Bibliotecas)
+------------------------
 
 .. toctree::
    :maxdepth: 1
