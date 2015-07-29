@@ -26,6 +26,8 @@ __init__(w1, w2, edge_menu)
 
 **Parâmetro: edge_menu** - QtGui.QGraphicsLineItem
 
+``Metodo inicial (construtor) da classe Edge. Recebe como parâmetros os objetos Node Inicial e Final. Define o objeto QtCore.QLineF que define a linha que representa o objeto QtGui.QGraphicsLineItem``
+
 get_fraction(pos)
 ++++++++++++++++++
 **Parâmetro: pos** -

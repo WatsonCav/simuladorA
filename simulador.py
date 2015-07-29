@@ -288,8 +288,8 @@ class JanelaPrincipal(object):
 
     def save(self):
         '''
-            Esta funçao salva os avanços dos elementos graficos 
-            chamando a funçao que os codifica em um arquivo XML
+            Esta funçao salva os elementos graficos chamando 
+            a funçao que os codifica em um arquivo XML
         '''
 
         filename = QtGui.QFileDialog.getSaveFileName(
@@ -313,7 +313,7 @@ class JanelaPrincipal(object):
     def setSelect(self):
         '''
             Callback chamada no momento em que se faz necessario
-            alterar do modo de selecao para movimentacao de items
+            alterar o modo de selecao para movimentacao de itens
             no diagrama grafico ou vice-versa
         '''
         if self.sceneWidget.myMode == self.sceneWidget.SelectItems:
@@ -324,7 +324,7 @@ class JanelaPrincipal(object):
     def buttonGroupClicked(self, id):
         '''
             Callback chamada no momento em que um botão de inserção
-            de itens e pressionado.
+            de itens é pressionado.
         '''
 
         if self.buttonGroup.button(id).isChecked():
