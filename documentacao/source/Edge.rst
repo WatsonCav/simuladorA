@@ -12,9 +12,9 @@ Classe que implementa o objeto Edge que liga dois objetos Node um ao outro.
 Métodos
 -------
 
-* get_fraction
+* get_fraction(pos)
 * update_position
-* set_color
+* `set_color(color)`_
 * boudingRect
 * paint
 * mousePressEvent
@@ -22,7 +22,7 @@ Métodos
 
 __init__(w1, w2, edge_menu)
 ++++++++++++++++++++++++++++++++++++++++++++++
-**Parâmetro: w1, w2** - QtGui.QGraphicsRectItem.Node
+**Parâmetros: w1, w2** - QtGui.QGraphicsRectItem.Node
 
 **Parâmetro: edge_menu** - QtGui.QGraphicsLineItem
 

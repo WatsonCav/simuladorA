@@ -20,6 +20,8 @@ Métodos
 * mousePressEvent
 * contestMenuEvent
 
+`set_color(color)`_
+
 __init__(w1, w2, edge_menu)
 ++++++++++++++++++++++++++++++++++++++++++++++
 **Parâmetro: w1, w2** - QtGui.QGraphicsRectItem.Node
