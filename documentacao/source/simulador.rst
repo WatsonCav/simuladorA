@@ -6,7 +6,7 @@
 Arquivo simulador.py
 ====================
 
-Arquivo principal (executável) do simulador.
+Arquivo que contem as classes que criam, configuram e controlam a janela principal do simulador. Neste arquivo tambem esta presente o metodo estatico main, que por si ja executa todas as chamadas e configuraçoes necessarias para que o programa rode perfeitamente, tornando simulador.py o unico arquivo que precisa ser executado pelo usuario.
 
 Classes
 -------

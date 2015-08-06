@@ -3,22 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Classe DashedLine
-====================
+*class* DashedLine(*[parent = QGraphicsLineItem]*)
+====================================================
+**Parâmetro: parent** - QtGui.QGraphicsLineItem
 
 Descrição.............
 
 Métodos
--------
++++++++
 
-* paint
+* ``paint(painter, option, widget)``_
 
-*class* DashedLine(*[parent=object]*)
-++++++++++++++++++++++++++++++++++++++
-**Parâmetro: parent** - QtGui.QGraphicsLineItem
+__init__()
+++++++++++
+Descriçao...
 
-inicializar_componentes(painter, option, widget)
+paint(painter, option, widget)
 +++++++++++++++++++++++++++++++++++++++++++++++++
-**Parâmetro: painter** - 
-**Parâmetro: option** - 
-**Parâmetro: widget** - 
+**Parâmetros:**
+
+**painter** - 
+
+**option** - 
+
+**widget** - 
+
+Descriçao...

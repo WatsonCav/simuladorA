@@ -8,7 +8,7 @@
     
     <title>class Edge([parent = QGraphicsLineItem]) &mdash; SmartPower 0.1 documentação</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -24,13 +24,13 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="SmartPower 0.1 documentação" href="index.html" />
     <link rel="up" title="Arquivo graphics.py" href="graphics.html" />
     <link rel="prev" title="Classe DashedLine" href="DashedLine.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
+  <body>
+    <div class="related">
       <h3>Navegação</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -39,15 +39,15 @@
         <li class="right" >
           <a href="DashedLine.html" title="Classe DashedLine"
              accesskey="P">anterior</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">SmartPower 0.1 documentação</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="graphics.html" accesskey="U">Arquivo graphics.py</a> &raquo;</li> 
+        <li><a href="index.html">SmartPower 0.1 documentação</a> &raquo;</li>
+          <li><a href="graphics.html" accesskey="U">Arquivo graphics.py</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="class-edge-parent-qgraphicslineitem">
 <h1><em>class</em> Edge(<em>[parent = QGraphicsLineItem]</em>)<a class="headerlink" href="#class-edge-parent-qgraphicslineitem" title="Link permanente para este título">¶</a></h1>
@@ -56,43 +56,55 @@
 <div class="section" id="metodos">
 <h2>Métodos<a class="headerlink" href="#metodos" title="Link permanente para este título">¶</a></h2>
 <ul class="simple">
-<li>get_fraction</li>
-<li>update_position</li>
-<li>set_color</li>
-<li>boudingRect</li>
-<li>paint</li>
-<li>mousePressEvent</li>
-<li>contestMenuEvent</li>
+<li><a class="reference internal" href="#get-fraction-pos">get_fraction(pos)</a></li>
+<li><a class="reference internal" href="#update-position">update_position()</a></li>
+<li><a class="reference internal" href="#set-color-color">set_color(color)</a></li>
+<li><a href="#id1"><span class="problematic" id="id2">`boudingRect()`_</span></a></li>
+<li><a class="reference internal" href="#paint-painter-option-widget">paint(painter, option, widget)</a></li>
+<li><a class="reference internal" href="#mousepressevent-mouse-event">mousePressEvent(mouse_event)</a></li>
+<li><a class="reference internal" href="#contestmenuevent-event">contestMenuEvent(event)</a></li>
 </ul>
-<p><a class="reference internal" href="#set-color-color">set_color(color)</a></p>
+</div>
 <div class="section" id="init-w1-w2-edge-menu">
-<h3>__init__(w1, w2, edge_menu)<a class="headerlink" href="#init-w1-w2-edge-menu" title="Link permanente para este título">¶</a></h3>
-<p><strong>Parâmetro: w1, w2</strong> - QtGui.QGraphicsRectItem.Node</p>
-<p><strong>Parâmetro: edge_menu</strong> - QtGui.QGraphicsLineItem</p>
-<p><code class="docutils literal"><span class="pre">Metodo</span> <span class="pre">inicial</span> <span class="pre">(construtor)</span> <span class="pre">da</span> <span class="pre">classe</span> <span class="pre">Edge.</span> <span class="pre">Recebe</span> <span class="pre">como</span> <span class="pre">parâmetros</span> <span class="pre">os</span> <span class="pre">objetos</span> <span class="pre">Node</span> <span class="pre">Inicial</span> <span class="pre">e</span> <span class="pre">Final.</span> <span class="pre">Define</span> <span class="pre">o</span> <span class="pre">objeto</span> <span class="pre">QtCore.QLineF</span> <span class="pre">que</span> <span class="pre">define</span> <span class="pre">a</span> <span class="pre">linha</span> <span class="pre">que</span> <span class="pre">representa</span> <span class="pre">o</span> <span class="pre">objeto</span> <span class="pre">QtGui.QGraphicsLineItem</span></code></p>
+<h2>__init__(w1, w2, edge_menu)<a class="headerlink" href="#init-w1-w2-edge-menu" title="Link permanente para este título">¶</a></h2>
+<p><strong>Parâmetros:</strong></p>
+<p><strong>w1, w2</strong> - QtGui.QGraphicsRectItem.Node</p>
+<p><strong>edge_menu</strong> - QtGui.QGraphicsLineItem</p>
+<p>Metodo inicial (construtor) da classe Edge. Recebe como parâmetros os objetos Node Inicial e Final. Define o objeto QtCore.QLineF que define a linha que representa o objeto QtGui.QGraphicsLineItem</p>
 </div>
 <div class="section" id="get-fraction-pos">
-<h3>get_fraction(pos)<a class="headerlink" href="#get-fraction-pos" title="Link permanente para este título">¶</a></h3>
+<h2>get_fraction(pos)<a class="headerlink" href="#get-fraction-pos" title="Link permanente para este título">¶</a></h2>
 <p><strong>Parâmetro: pos</strong> -</p>
+<p>Descriçao...</p>
 </div>
 <div class="section" id="update-position">
-<h3>update_position()<a class="headerlink" href="#update-position" title="Link permanente para este título">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">Retorna</span> <span class="pre">a</span> <span class="pre">nova</span> <span class="pre">posição</span> <span class="pre">do</span> <span class="pre">objeto</span></code> ...............</p>
+<h2>update_position()<a class="headerlink" href="#update-position" title="Link permanente para este título">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">Retorna</span> <span class="pre">a</span> <span class="pre">nova</span> <span class="pre">posição</span> <span class="pre">do</span> <span class="pre">objeto</span></tt> ...............</p>
 </div>
 <div class="section" id="set-color-color">
-<h3>set_color(color)<a class="headerlink" href="#set-color-color" title="Link permanente para este título">¶</a></h3>
+<h2>set_color(color)<a class="headerlink" href="#set-color-color" title="Link permanente para este título">¶</a></h2>
 <p><strong>Parâmetro: color</strong> - QtGui.QColor</p>
+<p>Descriçao....</p>
 </div>
 <div class="section" id="boundingrect">
-<h3>boundingRect()<a class="headerlink" href="#boundingrect" title="Link permanente para este título">¶</a></h3>
+<h2>boundingRect()<a class="headerlink" href="#boundingrect" title="Link permanente para este título">¶</a></h2>
+<p>Descriçao...</p>
 </div>
 <div class="section" id="paint-painter-option-widget">
-<h3>paint(painter, option, widget)<a class="headerlink" href="#paint-painter-option-widget" title="Link permanente para este título">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">Breve</span> <span class="pre">descrição</span> <span class="pre">da</span> <span class="pre">função</span></code></p>
-<p><strong>Parâmetro: painter</strong> -</p>
-<p><strong>Parâmetro: option</strong> -</p>
-<p><strong>Parâmetro: widget</strong> -</p>
+<h2>paint(painter, option, widget)<a class="headerlink" href="#paint-painter-option-widget" title="Link permanente para este título">¶</a></h2>
+<p><strong>Parâmetros:</strong></p>
+<p><strong>painter</strong> -</p>
+<p><strong>option</strong> -</p>
+<p><strong>widget</strong> -</p>
+<p>Descriçao....</p>
 </div>
+<div class="section" id="mousepressevent-mouse-event">
+<h2>mousePressEvent(mouse_event)<a class="headerlink" href="#mousepressevent-mouse-event" title="Link permanente para este título">¶</a></h2>
+<p><strong>Parâmetro: mouse_event</strong> -</p>
+</div>
+<div class="section" id="contestmenuevent-event">
+<h2>contestMenuEvent(event)<a class="headerlink" href="#contestmenuevent-event" title="Link permanente para este título">¶</a></h2>
+<p><strong>Parâmetro: - event</strong></p>
 </div>
 </div>
 
@@ -100,20 +112,20 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Tabela de Conteúdo</a></h3>
   <ul>
 <li><a class="reference internal" href="#"><em>class</em> Edge(<em>[parent = QGraphicsLineItem]</em>)</a><ul>
-<li><a class="reference internal" href="#metodos">Métodos</a><ul>
+<li><a class="reference internal" href="#metodos">Métodos</a></li>
 <li><a class="reference internal" href="#init-w1-w2-edge-menu">__init__(w1, w2, edge_menu)</a></li>
 <li><a class="reference internal" href="#get-fraction-pos">get_fraction(pos)</a></li>
 <li><a class="reference internal" href="#update-position">update_position()</a></li>
 <li><a class="reference internal" href="#set-color-color">set_color(color)</a></li>
 <li><a class="reference internal" href="#boundingrect">boundingRect()</a></li>
 <li><a class="reference internal" href="#paint-painter-option-widget">paint(painter, option, widget)</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#mousepressevent-mouse-event">mousePressEvent(mouse_event)</a></li>
+<li><a class="reference internal" href="#contestmenuevent-event">contestMenuEvent(event)</a></li>
 </ul>
 </li>
 </ul>
@@ -121,14 +133,12 @@
   <h4>Tópico anterior</h4>
   <p class="topless"><a href="DashedLine.html"
                         title="capítulo anterior">Classe DashedLine</a></p>
-  <div role="note" aria-label="source link">
-    <h3>Esta Página</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/Edge.txt"
-            rel="nofollow">Exibir Fonte</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
+  <h3>Esta Página</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/Edge.txt"
+           rel="nofollow">Exibir Fonte</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
   <h3>Pesquisa rápida</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -145,7 +155,7 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related">
       <h3>Navegação</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -154,13 +164,13 @@
         <li class="right" >
           <a href="DashedLine.html" title="Classe DashedLine"
              >anterior</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">SmartPower 0.1 documentação</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="graphics.html" >Arquivo graphics.py</a> &raquo;</li> 
+        <li><a href="index.html">SmartPower 0.1 documentação</a> &raquo;</li>
+          <li><a href="graphics.html" >Arquivo graphics.py</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer" role="contentinfo">
+    <div class="footer">
         &copy; Copyright 2015, Watson.
-      Criado usando <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Criado usando <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>

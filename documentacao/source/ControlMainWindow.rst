@@ -3,17 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ControlMainWindow
-==================
+*class* ControlMainWindow(*[parent = QMainWindow]*)
+====================================================
 
 Classe que cria a janela principal do programa.
 
-.. toctree::
-   :maxdepth: 1
-
 Métodos
---------
++++++++
+Descriçao
 
-*class* ControlMainWindow(*[parent=QMainWindow]*)
+__init__()
 ++++++++++++++++++++++++++++++++++++++++++++++++++
-**Parâmetro: parent** - QtGui.QMainWindow
+Descriçao

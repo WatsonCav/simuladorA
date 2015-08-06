@@ -10,29 +10,31 @@
 Classe que implementa o objeto Edge que liga dois objetos Node um ao outro.
 
 Métodos
--------
++++++++
 
-* get_fraction
-* update_position
-* set_color
-* boudingRect
-* paint
-* mousePressEvent
-* contestMenuEvent
-
-`set_color(color)`_
+* `get_fraction(pos)`_
+* `update_position()`_
+* `set_color(color)`_
+* `boudingRect()`_
+* `paint(painter, option, widget)`_
+* `mousePressEvent(mouse_event)`_
+* `contestMenuEvent(event)`_
 
 __init__(w1, w2, edge_menu)
 ++++++++++++++++++++++++++++++++++++++++++++++
-**Parâmetro: w1, w2** - QtGui.QGraphicsRectItem.Node
+**Parâmetros:**
 
-**Parâmetro: edge_menu** - QtGui.QGraphicsLineItem
+**w1, w2** - QtGui.QGraphicsRectItem.Node
 
-``Metodo inicial (construtor) da classe Edge. Recebe como parâmetros os objetos Node Inicial e Final. Define o objeto QtCore.QLineF que define a linha que representa o objeto QtGui.QGraphicsLineItem``
+**edge_menu** - QtGui.QGraphicsLineItem
+
+Metodo inicial (construtor) da classe Edge. Recebe como parâmetros os objetos Node Inicial e Final. Define o objeto QtCore.QLineF que define a linha que representa o objeto QtGui.QGraphicsLineItem
 
 get_fraction(pos)
 ++++++++++++++++++
 **Parâmetro: pos** -
+
+Descriçao...
 
 update_position()
 ++++++++++++++++++
@@ -42,19 +44,34 @@ set_color(color)
 +++++++++++++++++
 **Parâmetro: color** - QtGui.QColor
 
+Descriçao....
+
 boundingRect()
 ++++++++++++++++
+Descriçao...
 
 paint(painter, option, widget)
 ++++++++++++++++++++++++++++++
-``Breve descrição da função``
 
-**Parâmetro: painter** -
+**Parâmetros:**
 
-**Parâmetro: option** -
+**painter** -
 
-**Parâmetro: widget** -
+**option** -
 
+**widget** -
+
+Descriçao....
+
+mousePressEvent(mouse_event)
++++++++++++++++++++++++++++++++++++
+
+**Parâmetro: mouse_event** -
+
+contestMenuEvent(event)
+++++++++++++++++++++++++
+
+**Parâmetro: - event**
 
 
  
