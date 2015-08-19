@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-*class* JanelaPrincipal(*[parent = object]*)
-=============================================
+*class* JanelaPrincipal( *[parent = object]* )
+===============================================
 **Parâmetro: parent** - object
 
 Classe que implementa a interface gráfica do simulador.
@@ -12,26 +12,26 @@ Classe que implementa a interface gráfica do simulador.
 Métodos
 ++++++++++
 
-* inicializar_componentes(main_window)
-* itemInserted(item_type)
-* save()
-* open()
-* setSelect()
-* buttonGroupClicked(id)
-* retranslateUi(main_window)
+* `inicializar_componentes(main_window)`_
+* `itemInserted(item_type)`_
+* `save()`_
+* `open()`_
+* `setSelect()`_
+* `buttonGroupClicked(id)`_
+* `retranslateUi(main_window)`_
 
 __init__()
-+++++++++++++++++++++++++++++++++++++++++++
-Descriçao...
+++++++++++++++++++++++++++
+Metodo construtor da classe JanelaPrincipal.
 
 inicializar_componentes(main_window)
-+++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++
 **Parâmetro: main_window** - object.JanelaPrincipal
 
 Método que implementa os componentes da interface gráfica.
 
 itemInserted(item_type)
-+++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++
 **Parâmetro: item_type** - 
 
 Callback chamada no momento em que um item é inserido no diagrama gráfico.

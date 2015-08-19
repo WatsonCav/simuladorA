@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-*class* Edge(*[parent = QGraphicsLineItem]*)
+*class* Edge( *[parent = QGraphicsLineItem]* )
 ===============================================
 **Parâmetro: parent** - QtGui.QGraphicsLineItem
 
@@ -15,7 +15,7 @@ Métodos
 * `get_fraction(pos)`_
 * `update_position()`_
 * `set_color(color)`_
-* `boudingRect()`_
+* `boundingRect()`_
 * `paint(painter, option, widget)`_
 * `mousePressEvent(mouse_event)`_
 * `contestMenuEvent(event)`_

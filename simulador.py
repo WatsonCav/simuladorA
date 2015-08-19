@@ -279,7 +279,7 @@ class JanelaPrincipal(object):
 
     def itemInserted(self, item_type):
         '''
-            Callback chamada no momento em que um item e iserido
+            Callback chamada no momento em que um item e inserido
             no diagrama grafico
         '''
         # self.buttonGroup.button(item_type).setChecked(False)
@@ -526,9 +526,14 @@ class JanelaPrincipal(object):
                 QtGui.QApplication.UnicodeUTF8))
 
 class ControlMainWindow(QtGui.QMainWindow):
+'''
+    Classe que cria a janela principal do programa.
+'''
     def __init__(self, parent=None):
         '''
-            Cria a janela principal do programa
+            Metodo inicial (construtor) da classe ControlMainWindow.
+            Chama o metodo construtor da classe QtGui.QMainWindow passando
+            como parametro parent.
         '''
         super(ControlMainWindow, self).__init__(parent)
         self.ui = JanelaPrincipal()

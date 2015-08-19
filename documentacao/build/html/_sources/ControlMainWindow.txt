@@ -10,8 +10,7 @@ Classe que cria a janela principal do programa.
 
 Métodos
 +++++++
-Descriçao
 
 __init__()
 ++++++++++++++++++++++++++++++++++++++++++++++++++
-Descriçao
+Metodo inicial (construtor) da classe ControlMainWindow. Chama o metodo construtor da classe QtGui.QMainWindow passando como parametro parent.

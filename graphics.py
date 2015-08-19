@@ -16,13 +16,24 @@ from avisoReligador import AvisoReligador
 lista_no_conectivo = []
 
 class DashedLine(QtGui.QGraphicsLineItem):
+    '''
+        Classe que implementa o objeto DashedLine, utilizado para indicar que um
+        elemento do diagrama foi selecionado. Sua representaçao e uma borda
+        tracejada laranja.
+    '''
 
     def __init__(self):
-
+        '''
+            Metodo construtor (inicial) da classe DashedLine. Chama o construtor
+            da classe parent sem passar parametros(QtGui.QGraphicsLineItem).
+        '''
         super(DashedLine, self).__init__()
 
     def paint(self, painter, option, widget):
-
+        '''
+            Metodo que desenha o objeto dashedLine, chamado sempre que um objeto
+            novo e selecionado.
+        '''
         painter.setPen(QtGui.QPen(QtCore.Qt.red,  # QPen Brush
                                                     2,  # QPen width
                                                     QtCore.Qt.DashLine,
@@ -77,6 +88,10 @@ class Edge(QtGui.QGraphicsLineItem):
                 w2.bar_busy = True
 
     def get_fraction(self, pos):
+        '''
+            Metodo que calcula em que fracao do objeto houve o click, retornando uma
+            nova posicao (posf) que sera de 0.25, 0.5 ou 0.75 do tamanho do objeto Edge.
+        '''
         deltaX = math.fabs(self.line().p2().x() - self.line().p1().x())
         deltaY = math.fabs(self.line().p2().y() - self.line().p1().y())
 
@@ -123,6 +138,10 @@ class Edge(QtGui.QGraphicsLineItem):
         # self.update_ret()
 
     def set_color(self, color):
+        '''
+            Metodo que seta a cor do objeto Edge como a definida pelo parametro
+            color.
+        '''
         self.setPen(QtGui.QPen(color))
 
     # def drawRec(self):
@@ -187,10 +206,6 @@ class Edge(QtGui.QGraphicsLineItem):
 
                 line.setLine(line.x1(),self.w2.y()+10,line.x2(),line.y2())
                 
-
-
-                
-
                 #line.setLine(line.x1(),self.w2.scenePos().y()+10,line.x2(),line.y2())
                 if self.w2.myItemType == Node.NoConectivo:
                     self.w2.setY(self.mapFromItem(
@@ -266,12 +281,19 @@ class Edge(QtGui.QGraphicsLineItem):
             painter.drawLine(my_line)
 
     def mousePressEvent(self, mouse_event):
+        '''
+            Metodo do evento de pressionar o mouse (mousePressEvent)
+            implementado pela classe Edge
+        '''
         self.setSelected(True)
         super(Edge, self).mousePressEvent(mouse_event)
         return
 
 
     def contextMenuEvent(self, event):
+        '''
+            Callback chamada... ***continuar***
+        '''
         self.scene().clearSelection()
         self.setSelected(True)
         self.myEdgeMenu.exec_(event.screenPos() + QtCore.QPointF(20,20))
